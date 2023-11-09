@@ -1,0 +1,21 @@
+$color-r: red;
+$color-g: green;
+$color-w: white;
+$color-s: #626264;
+$font-h: 'Clash Display', sans-serif;
+$font-t: 'Satoshi', sans-serif;
+
+@font-face {
+    font-family: 'Clash Display';
+    src: url(../assets/fonts/ClashDisplay-Regular.woff2);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+@font-face {
+    font-family: 'Satoshi';
+    src: url(../assets/fonts/Satoshi-Regular.woff2);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
