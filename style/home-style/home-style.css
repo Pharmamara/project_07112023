@@ -1,1 +1,77 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Clash Display";
+  src: url(../assets/fonts/ClashDisplay-Regular.woff2);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url(../assets/fonts/Satoshi-Regular.woff2);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+/*применение - увеличение внутренних отступов и размера шрифта, когда вьюпорт становится больше 1024px:
+.site-header {
+  padding: 2rem;
+  font-size: 1.8rem;
+  @include mq('tablet-wide') {
+   padding-top: 4rem;
+   font-size: 2.4rem;
+  }
+} */
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main {
+  display: grid;
+  grid-template-rows: max-content 2fr;
+  grid-template-columns: max-content 50%;
+  width: 100vw;
+}
+.main .main__img {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  height: 100%;
+}
+.main .main__about {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  text-align: center;
+  font-family: "Clash Display", sans-serif;
+  justify-self: center;
+  align-self: center;
+}
+
+.aside {
+  grid-row: 2/3;
+  display: flex;
+  justify-content: space-around;
+}
+.aside .aside__press {
+  border: 1px solid black;
+}
+.aside .aside__traditions {
+  border: 1px solid black;
+}
+.aside .aside__good {
+  border: 1px solid black;
+}/*# sourceMappingURL=home-style.css.map */
