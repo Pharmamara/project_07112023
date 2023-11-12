@@ -3,14 +3,23 @@
 
 .main {
     display: grid;
-    grid-template-rows: max-content 2fr;
-    grid-template-columns: max-content 50%;
-    width: 100vw;
+    grid-template-rows: max-content 1fr;
+    grid-template-columns: 50% 50%;
+    margin: auto;
+    height: fit-content;
 
     .main__img {
         grid-column: 1/2;
         grid-row: 1/2;
-        height: 100%;
+        width: 70%;
+        display: flex; 
+        align-self: center;
+        
+        
+        .main__img__img {
+            max-width: 100%; 
+            
+        }
     }
     
     .main__about {
@@ -20,7 +29,39 @@
         font-family: $font-h;
         justify-self: center;
         align-self: center;
+        padding: 20px;
+
+        .main__about__heading {
+            margin-bottom: 50px;
+            font-size: 80px;
+            color: $color-g;
+        }
+
+        .main__about__text {
+            margin-bottom: 100px;
+            font-size: 20px;
+        }
+
+        .main__about__btn {
+            text-decoration: none;
+            outline: none;
+            cursor: pointer;
+            background-color: $color-r;
+            border-radius: 30px;
+            width: fit-content;
+            height: 80px;
+            margin-top: 30px;
+            font-family: $font-h;
+            font-size: 200%;
+            padding: 10px;
+        }
+    
+        .main__about__btn:hover {
+            background-color: $color-g;
+        }
     }
+
+    
 }
 
 
@@ -29,19 +70,58 @@
     grid-row: 2/3;
     display: flex;
     justify-content: space-around;
+    margin-top: 70px;
+    font-family: $font-t;
+    a {
+        color: $color-g;
+    }
+
+    a:hover {
+        color: $color-r;
+    }
 
     .aside__press {
-        border: 1px solid black;
+        border: 3px solid $color-g;
+        border-radius: 20px;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        width: 30%;
+        max-height: 30%;
+        justify-content: center;
         
+        .aside__press__img {
+            max-width: 100%;
+        }
     }
     
     .aside__traditions {
-        border: 1px solid black;
+        border: 3px solid $color-g;
+        border-radius: 20px;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 30%;
         
+        .aside__traditions__img {
+            max-width: 50%;
+        }
     }
     
     .aside__good {
-        border: 1px solid black;
+        border: 3px solid $color-g;
+        border-radius: 20px;
+        width: 30%;
+        max-height: 30%;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
         
+        
+        .aside__good__img {
+            max-width: 100%;
+        }
     }
 }
