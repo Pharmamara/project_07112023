@@ -1,2 +1,20 @@
 @import "../vars";
 @import "../template";
+
+h2 {
+    font-family: $font-h;
+    color: $color-g;
+}
+
+h3 {
+    font-family: $font-t;
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+}
+
+.news__item1, .news__item2, .news__item3, .news__item4, .news__item5, .news__item6 {
+    display: flex;
+}
