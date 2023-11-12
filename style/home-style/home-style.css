@@ -43,7 +43,7 @@ ul {
 
 .main {
   display: grid;
-  grid-template-rows: max-content 1fr;
+  grid-template-rows: max-content;
   grid-template-columns: 50% 50%;
   margin: auto;
   height: -moz-fit-content;
@@ -96,7 +96,6 @@ ul {
 }
 
 .aside {
-  grid-row: 2/3;
   display: flex;
   justify-content: space-around;
   margin-top: 70px;
