@@ -1,1 +1,147 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Clash Display";
+  src: url(../assets/fonts/ClashDisplay-Regular.woff2);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url(../assets/fonts/Satoshi-Regular.woff2);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+/*применение - увеличение внутренних отступов и размера шрифта, когда вьюпорт становится больше 1024px:
+.site-header {
+  padding: 2rem;
+  font-size: 1.8rem;
+  @include mq('tablet-wide') {
+   padding-top: 4rem;
+   font-size: 2.4rem;
+  }
+} */
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main {
+  display: grid;
+  grid-template-rows: max-content;
+  grid-template-columns: 50% 50%;
+  margin: auto;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.main .main__img {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  width: 70%;
+  display: flex;
+  align-self: center;
+}
+.main .main__img .main__img__img {
+  max-width: 100%;
+}
+.main .main__about {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  text-align: center;
+  font-family: "Clash Display", sans-serif;
+  justify-self: center;
+  align-self: center;
+  padding: 20px;
+}
+.main .main__about .main__about__heading {
+  margin-bottom: 50px;
+  font-size: 80px;
+  color: green;
+}
+.main .main__about .main__about__text {
+  margin-bottom: 100px;
+  font-size: 20px;
+}
+.main .main__about .main__about__btn {
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  background-color: red;
+  border-radius: 30px;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 80px;
+  margin-top: 30px;
+  font-family: "Clash Display", sans-serif;
+  font-size: 200%;
+  padding: 10px;
+}
+.main .main__about .main__about__btn:hover {
+  background-color: green;
+}
+
+.aside {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 70px;
+  font-family: "Satoshi", sans-serif;
+}
+.aside a {
+  color: green;
+}
+.aside a:hover {
+  color: red;
+}
+.aside .aside__press {
+  border: 3px solid green;
+  border-radius: 20px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  width: 30%;
+  max-height: 30%;
+  justify-content: center;
+}
+.aside .aside__press .aside__press__img {
+  max-width: 100%;
+}
+.aside .aside__traditions {
+  border: 3px solid green;
+  border-radius: 20px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+}
+.aside .aside__traditions .aside__traditions__img {
+  max-width: 50%;
+}
+.aside .aside__good {
+  border: 3px solid green;
+  border-radius: 20px;
+  width: 30%;
+  max-height: 30%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.aside .aside__good .aside__good__img {
+  max-width: 100%;
+}/*# sourceMappingURL=home-style.css.map */
