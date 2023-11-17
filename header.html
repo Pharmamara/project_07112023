@@ -26,18 +26,53 @@
           </h1>
         </div>
         <div class="header__wrapper">
-          <button class="submit__button" type="submit">
+          <button class="submit__button" type="submit" onclick="openForm()">
             ВСТУПИТЬ в автономию
           </button>
         </div>
+        <div class="form-popup" id="myForm">
+          <form action="#" class="form-container">
+            <h1>Вступить в автономию</h1>
+            <p class="accept">
+              Заполните форму заявки для вступления в автономию
+            </p>
+            <label for="name"><b>Имя*</b></label>
+            <input type="text" placeholder="Ваше имя" name="name" required />
+            <label for="phone"><b>Телефон*</b></label>
+            <input
+              type="tel"
+              placeholder="Ваш номер телефона"
+              name="phone"
+              required
+            />
+            <label for="email"><b>e-mail*</b></label>
+            <input type="text" placeholder="Ваш e-mail" name="email" required />
+            <p>
+              <textarea
+                class="resume"
+                type="text"
+                placeholder="Сопроводительное письмо"
+                name="resume"
+              ></textarea>
+            </p>
+            <p class="accept">
+              Нажимая кнопку "Отправить", Вы соглашаетесь с нашей политикой
+              конфиденциальности.
+            </p>
+            <button type="submit" class="btn">Отправить</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">
+              Закрыть
+            </button>
+          </form>
+        </div>
       </div>
       <nav class="nav">
-        <a href="#" class="nav__item">Об организации</a>
-        <a href="#" class="nav__item">Традиции</a>
-        <a href="#" class="nav__item">Нести добро</a>
-        <a href="#" class="nav__item">Наши герои</a>
-        <a href="#" class="nav__item">Пресс-служба</a>
-        <a href="#" class="nav__item">Контакты</a>
+        <a href="./about.html" class="nav__item">Об организации</a>
+        <a href="./traditions.html" class="nav__item">Традиции</a>
+        <a href="./goodness.html" class="nav__item">Нести добро</a>
+        <a href="./praise.html" class="nav__item">Наши герои</a>
+        <a href="./press.html" class="nav__item">Пресс-служба</a>
+        <a href="./Ustav.pdf" class="nav__item">Устав</a>
       </nav>
       <div class="header__search-block">
         <form class="header__search-form" action="#" method="get">
@@ -54,6 +89,14 @@
           alt="лилия"
         />
       </div>
+      <script>
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+      </script>
     </header>
   </body>
 </html>
