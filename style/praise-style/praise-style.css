@@ -40,4 +40,89 @@ ul {
 .container {
   width: 100%;
   margin: 0 auto;
+}
+
+body {
+  margin: 0;
+  padding: 0 15px;
+  display: flex;
+}
+
+h1 {
+  font-size: 50px;
+  color: green;
+  justify-content: center;
+  text-align: center;
+}
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: x-large;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 1025px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+h2 {
+  font-size: 30px;
+  padding-bottom: 3%;
+  padding-top: 3%;
+}
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: large;
+    max-width: 100%;
+  }
+}
+
+.praises__container {
+  display: flex;
+  justify-content: center;
+}
+
+.praises {
+  padding-bottom: 3%;
+  padding-top: 2%;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.praises__people__photo {
+  max-width: 100%;
+}
+
+.praises__people {
+  width: 30%;
+  padding-bottom: 3%;
+  padding-top: 2%;
+}
+@media screen and (max-width: 480px) {
+  .praises__people {
+    width: 85%;
+  }
+}
+
+img {
+  border: 3px red solid;
+  max-width: 100%;
+  max-height: 20em;
+}
+
+p {
+  font-size: 20px;
+  padding-bottom: 3%;
+  padding-top: 2%;
+}
+@media screen and (max-width: 480px) {
+  p {
+    font-size: medium;
+    max-width: 100%;
+    padding-right: 0;
+  }
 }/*# sourceMappingURL=praise-style.css.map */
