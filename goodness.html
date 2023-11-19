@@ -4,6 +4,346 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ДОБРО</title>
+    <link rel="stylesheet" href="./style/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/fonts/font-awesome/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./style/goodness-style/goodness-style.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <div class="header__logo">
+          <img
+            class="logo header__logo"
+            src="./assets/img-header/palma.jpg"
+            alt="пальма в тюбетейке"
+          />
+        </div>
+        <div class="header__company-name">
+          <p class="header__company-name_small">
+            ГОРОДСКАЯ ОБЩЕСТВЕННАЯ ОРГАНИЗАЦИЯ
+          </p>
+          <h1 class="header__company-name_big">
+            ТАТАРСКАЯ НАЦИОНАЛЬНО-КУЛЬТУРНАЯ АВТОНОМИЯ ТАТАР СОЧИ
+          </h1>
+        </div>
+        <div class="header__wrapper">
+          <button class="submit__button" type="submit" onclick="openForm()">
+            ВСТУПИТЬ в автономию
+          </button>
+        </div>
+        <div class="form-popup" id="myForm">
+          <form action="#" class="form-container">
+            <h1>Вступить в автономию</h1>
+            <p class="accept">
+              Заполните форму заявки для вступления в автономию
+            </p>
+            <label for="name"><b>Имя*</b></label>
+            <input type="text" placeholder="Ваше имя" name="name" required />
+            <label for="phone"><b>Телефон*</b></label>
+            <input
+              type="tel"
+              placeholder="Ваш номер телефона"
+              name="phone"
+              required
+            />
+            <label for="email"><b>e-mail*</b></label>
+            <input type="text" placeholder="Ваш e-mail" name="email" required />
+            <p>
+              <textarea
+                class="resume"
+                type="text"
+                placeholder="Сопроводительное письмо"
+                name="resume"
+              ></textarea>
+            </p>
+            <p class="accept">
+              Нажимая кнопку "Отправить", Вы соглашаетесь с нашей политикой
+              конфиденциальности.
+            </p>
+            <button type="submit" class="btn">Отправить</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">
+              Закрыть
+            </button>
+          </form>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="./about.html" class="nav__item">Об организации</a>
+        <a href="./traditions.html" class="nav__item">Традиции</a>
+        <a href="./goodness.html" class="nav__item">Нести добро</a>
+        <a href="./praise.html" class="nav__item">Наши герои</a>
+        <a href="./press.html" class="nav__item">Пресс-служба</a>
+        <a href="./Ustav.pdf" class="nav__item">Устав</a>
+      </nav>
+      <div class="header__search-block">
+        <form class="header__search-form" action="#" method="get">
+          <button type="submit" class="header__search-button">
+            <img src="./assets/img-header/Search.svg" alt="поиск" />
+          </button>
+          <input name="s" type="search" class="header__search-field" />
+        </form>
+      </div>
+      <div class="header__bottom">
+        <img
+          class="bottom_img"
+          src="./assets/img-header/liliya4.jpg"
+          alt="лилия"
+        />
+      </div>
+      <script>
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+      </script>
+    </header>
+    <main class="main">
+      <div class="main__head__title">
+        <h1 class="main__title">ДОБРО</h1>
+        <h2>ДЕЙСТВИЯ, ПРИНОСЯЩИЕ <span>СЧАСТЬЕ</span></h2>
+      </div>
+      <div class="goodness__container">
+        <div class="goodness">
+          <div class="goodness__event">
+            <img
+              class="goodness__event__photo"
+              src="./assets/img-goodness/plov.png"
+              alt="единые добром"
+            />
+            <h2 class="goodness__event__name">
+              Благотворительная акция "Единые добром"
+            </h2>
+            <p>
+              Сегодня в День народного единства объединились народы Сочи в
+              помощь тем, кому нужна наша поддержка.
+            </p>
+            <p>
+              Благодаря общим усилиям мы приготовили 159 порций плова и
+              поздравили с праздником 32 многодетных семей и семьи с особенными
+              детьми!
+            </p>
+            <p>Пусть счастье не покидает ваши дома!</p>
+          </div>
+          <div class="goodness__event">
+            <img
+              class="goodness__event__photo"
+              src="./assets/img-goodness/soldier.png"
+              alt="своих не бросаем"
+            />
+            <h2 class="goodness__event__name">Своих не бросаем!</h2>
+            <p>
+              Татарская национально-культурная автономия приняла участие в сборе
+              обуви и одежды для солдат.
+            </p>
+            <p>Сбор организован инициативной группой «Своих не бросаем».</p>
+            <p>
+              Всего добровольцами было собрано 200 000₽, на средства были
+              закуплены сапоги и бушлаты. Все для фронта! Все для Победы! Храни
+              вас Аллах!
+            </p>
+          </div>
+          <div class="goodness__event">
+            <img
+              class="goodness__event__photo"
+              src="./assets/img-goodness/soldiers.png"
+              alt="новобранцы"
+            />
+            <h2 class="goodness__event__name">
+              В Адлере торжественно проводили 14 добровольцев
+            </h2>
+            <p>14 ребят отправились в зону СВО.</p>
+            <p>
+              В торжественных проводах в зону СВО приняли участие члены ТНКА.
+            </p>
+            <p>
+              Юнармейцы вручили добровольцам "Письма солдатам" с пожеланиями
+              вернуться здоровыми и с Победой!
+            </p>
+            <p>Возвращайтесь с Миром! Храни вас Бог!</p>
+          </div>
+          <div class="goodness__event">
+            <img
+              class="goodness__event__photo"
+              src="./assets/img-goodness/sanatory.jpg"
+              alt="Tukaj"
+            />
+            <h2 class="goodness__event__name">
+              Детский санаторий для больных туберкулезом «Горный воздух»
+            </h2>
+            <p>
+              Стало доброй традицией ежегодно посещать деток в «Детском
+              санаторий для больных туберкулезом «Горный воздух».
+            </p>
+            <p>Привезли подарки, пожелания о наискорейшем выздоровлении.</p>
+            <p>Дети приготовили концертную программу.</p>
+          </div>
+          <div class="goodness__event">
+            <img
+              class="goodness__event__photo"
+              src="./assets/img-goodness/NY.jpg"
+              alt="Dasaev"
+            />
+            <h2 class="goodness__event__name">Акция «добрый новый год»</h2>
+            <p>
+              В рамках акции «Добрый Новый год» активист татаро-башкирского
+              сообщества ГОО ТНКА г.Сочи навестили подопечных отделения
+              медицинского ухода городской больницы с.Илларионовка Хостинского
+              района, именуемое в народе «Домом престарелых».
+            </p>
+            <p>
+              Заготовили гостинцы своими руками: пекли пироги, блины и
+              вкуснейшие пирожки, купили сладости и сувениры.
+            </p>
+            <p>
+              Старейшина Татарской национально-культурной автономии г.Сочи
+              Загиров Рашит Вагизович собрал со своего сада мандарины в дар.
+            </p>
+            <p>Детки нарисовали новогодние открытки.</p>
+            <p>Но самое главное – это внимание, тепло, забота и доброта.</p>
+          </div>
+          <div class="goodness__event">
+            <img
+              class="goodness__event__photo"
+              src="./assets/img-goodness/igry.png"
+              alt="Akchurin"
+            />
+            <h2 class="goodness__event__name">"Игры народов Кубани"</h2>
+            <p>
+              Своим примером мы продвигаем спорт в массы, пропагандируем
+              здоровый и активный образ жизни.
+            </p>
+            <p>
+              Участники Татарской национально-культурной автономии возглавили
+              делегацию из Сочи и заняли почетное 2 место в спартакиаде "Игры
+              народов Кубани".
+            </p>
+            <p>
+              Необычная спартакиада проходила в городе Армавир, в рамках
+              реализации проекта "Единство народов - сила Кубани".
+            </p>
+            <p>
+              Участники из Центров национальных культур сразились в девять видов
+              состязаний, которые имели как спортивную, так и игровую
+              направленность.
+            </p>
+          </div>
+          <div class="goodness__event">
+            <img
+              class="goodness__event__photo"
+              src="./assets/img-goodness/sabantuy.png"
+              alt="Gata"
+            />
+            <h2 class="goodness__event__name">Сочный Южный Сабантуй 2023</h2>
+            <p>
+              На празднике Сабантуй, который прошёл 10 июня в Адлерском парке
+              культуры и отдыха, в этом году было особенно многолюдно.
+            </p>
+            <p>
+              Праздник проходил в три этапа: Конкурс по конному спорту, Морское
+              соревнование по сап сёрфингу, Грандиозные гулянья в парке.
+            </p>
+            <p>
+              Национальный праздник в солнечном Сочи на берегу Чёрного моря даёт
+              возможность, насладиться южным колоритом, тёплым морем и задорной
+              командой.
+            </p>
+          </div>
+          <div class="goodness__event">
+            <img
+              class="goodness__event__photo"
+              src="./assets/img-goodness/head.png"
+              alt="Shaimiev"
+            />
+            <h2 class="goodness__event__name">
+              Работу председателя автономии отметили почетной грамотой
+            </h2>
+            <p>
+              Глава города Сочи Алексей Копайгородский в канун Дня народного
+              единства вручил почетную грамоту председателю Татарской автономии
+              Уразаиву Алику Мухамедовичу за вклад в укрепление единства
+              гражданской нации, патриотическое воспитание и пример личного
+              мужества.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-left">
+        <h3>городская общественная организация</h3>
+        <h2>ТАТАРСКАЯ НАЦИОНАЛЬНО-КУЛЬТУРНАЯ АВТОНОМИЯ ТАТАР СОЧИ</h2>
+
+        <p class="footer-links">
+          <a href="./home.html">На главную</a>
+          ·
+          <a href="./about.html">Об организации</a>
+          ·
+          <a href="./traditions.html">Традиции</a>
+          ·
+          <a href="./goodness.html">Нести добро</a>
+          ·
+          <a href="./praise.html">Наши герои</a>
+          ·
+          <a href="./press.html">Пресс-служба</a>
+          ·
+          <a href="./Ustav.pdf">Устав</a>
+        </p>
+
+        <p class="footer-company-name">ITGirls; 2023</p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p>
+            <span
+              >354382, г. Сочи, Триумфальный проезд, дом 1, «Дельта»
+              Сириус</span
+            >
+            Краснодарский край, Российская Федерация
+          </p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+7 9882 141 28-28</p>
+          <p>+7 929 292 92-02</p>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p>
+            <a href="mailto:Yrazaev83@mail.ru">напишите нам</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>О нас</span>
+          Некоммерческая организация создана для осуществления деятельности в г.
+          Сочи (проведение праздников, участие в мероприятиях для сохранения,
+          развития и демонстрации культурного наследия Татар)
+        </p>
+
+        <div class="footer-icons">
+          <a href="https://vk.com/tatarlar_sochi"><i class="fa fa-vk"></i></a>
+          <a href="https://ok.ru/group/70000003129816"
+            ><i class="fa fa-odnoklassniki"></i
+          ></a>
+          <a href="https://chat.whatsapp.com/JYhfGNTgS0rHfFVvLMe5s5"
+            ><i class="fa fa-whatsapp"></i
+          ></a>
+          <a href="https://t.me/sochitatarlar"
+            ><i class="fa fa-telegram"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

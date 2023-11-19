@@ -1,2 +1,75 @@
 @import "../vars";
 @import "../template";
+@import "../footer-style/footer-style.scss";
+@import "../header-style/header-style.scss";
+.main {
+    font-family: $font-t;
+}
+h1 {
+    font-family: $font-h;
+    font-size: 70px;
+    font-weight: bolder;
+    color: $color-g;
+    justify-content: center;
+    text-align: center;
+    @media screen  and (max-width: 480px) {
+        font-size: x-large;
+        max-width: 100%;}
+        @media screen  and (max-width: 1025px) {
+            font-size: 40px;
+        }
+    }
+h2 {
+    font-family: $font-h;
+    font-size: 30px;
+    color: $color-s;    
+    padding-bottom: 1%;
+    padding-top: 1%;
+    text-align: center;
+        @media screen  and (max-width: 480px) {
+            font-size: large;
+            max-width: 100%;
+    
+        }
+    }
+h2 span {
+    color: $color-r;
+}
+.goodness__container {
+display: flex;
+justify-content: center;
+}
+.goodness {
+    padding-bottom: 3%;
+    padding-top: 2%;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.goodness__event__photo {
+    max-width: 100%;
+    border: 3px red solid;
+    max-height: 20em;
+}
+.goodness__event {
+    width: 30%;
+    padding-bottom: 3%;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    @media screen  and (max-width: 480px) {
+    width: 85%;
+    }
+}
+p {
+    font-size: 20px;
+    padding-bottom: 3%;
+    padding-top: 2%;
+    @media screen  and (max-width: 480px) {
+        font-size: medium;
+        max-width: 100%;
+        padding-right: 0;
+    }
+}

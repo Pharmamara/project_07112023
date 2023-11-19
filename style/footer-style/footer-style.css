@@ -43,16 +43,16 @@ ul {
 }
 
 .footer {
-  position: relative;
+  position: fixed;
   bottom: 0;
+  padding: 55px 50px;
+  margin-top: 80px;
   background-color: #626264;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
   text-align: left;
   font: bold 16px sans-serif;
-  padding: 55px 50px;
-  margin-top: 80px;
 }
 
 .footer .footer-left,
@@ -213,4 +213,6 @@ ul {
   .footer .footer-center i {
     display: none;
   }
-}/*# sourceMappingURL=footer-style.css.map */
+}
+
+/*# sourceMappingURL=footer-style.css.map */
