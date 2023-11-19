@@ -86,7 +86,6 @@ ul {
 }
 
 .footer {
-  position: fixed;
   bottom: 0;
   padding: 55px 50px;
   margin-top: 80px;
@@ -543,9 +542,7 @@ ul {
 }
 
 h1 {
-  font-family: "Clash Display", sans-serif;
-  font-size: 70px;
-  font-weight: bolder;
+  font-size: 50px;
   color: green;
   justify-content: center;
   text-align: center;
@@ -563,12 +560,9 @@ h1 {
 }
 
 h2 {
-  font-family: "Clash Display", sans-serif;
   font-size: 30px;
-  color: #626264;
-  padding-bottom: 1%;
-  padding-top: 1%;
-  text-align: center;
+  padding-bottom: 3%;
+  padding-top: 3%;
 }
 @media screen and (max-width: 480px) {
   h2 {
@@ -577,16 +571,12 @@ h2 {
   }
 }
 
-h2 span {
-  color: red;
-}
-
-.goodness__container {
+.praises__container {
   display: flex;
   justify-content: center;
 }
 
-.goodness {
+.praises {
   padding-bottom: 3%;
   padding-top: 2%;
   width: 95%;
@@ -596,21 +586,19 @@ h2 span {
   flex-wrap: wrap;
 }
 
-.goodness__event__photo {
+.praises__people__photo {
   max-width: 100%;
   border: 3px red solid;
   max-height: 20em;
 }
 
-.goodness__event {
+.praises__people {
   width: 30%;
   padding-bottom: 3%;
   padding-top: 2%;
-  padding-left: 2%;
-  padding-right: 2%;
 }
 @media screen and (max-width: 480px) {
-  .goodness__event {
+  .praises__people {
     width: 85%;
   }
 }

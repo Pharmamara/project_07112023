@@ -1,10 +1,12 @@
 @import "../vars";
 @import "../template";
-
-
+@import "../footer-style/footer-style.scss";
+@import "../header-style/header-style.scss";
 .main {
     margin: 0 5% 0 5%;
+    font-family: $font-t;
     .main__head__title{
+        font-family: $font-h;
         height: 20vh;
     
 }
@@ -23,7 +25,6 @@
             max-width: 100%;
         }
     }   
-
 .main>div {
     display: flex;
     flex-direction: row;
@@ -39,7 +40,6 @@
             max-width: 100%;
         }  
     }
-
 .main__text {
     display: flex;
     flex-direction: column;
@@ -67,6 +67,7 @@ p {
 }
 h2 {
     font-size: 30px;
+    font-family: $font-h;
     padding-bottom: 3%;
     @media screen  and (max-width: 480px) {
         font-size: large;
@@ -76,6 +77,7 @@ h2 {
 }
 h1 {
     font-size: 50px;
+    font-family: $font-h;
     color: $color-g;
     @media screen  and (max-width: 480px) {
         font-size: x-large;
@@ -84,8 +86,13 @@ h1 {
             font-size: 40px;
         }
     }
-
-img {
+.main__area__img, 
+.main__language__img,
+.main__religion__img,
+.main__life__img,
+.main__clothes__img,
+.main__hospitality__img,
+.main__holidays__img {
     border: 3px red solid;
 }
 
