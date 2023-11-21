@@ -541,7 +541,6 @@ ul {
 .main > div {
   display: flex;
   flex-direction: row;
-  height: 50vh;
   padding-bottom: 1%;
 }
 @media screen and (max-width: 480px) {
@@ -551,7 +550,7 @@ ul {
     max-width: 100%;
   }
 }
-@media screen and (max-width: 1025px) {
+@media (min-width: 576px) and (max-width: 1025px) {
   .main > div {
     height: 100%;
     flex-direction: column;
@@ -578,7 +577,7 @@ ul {
 }
 
 p {
-  font-size: 20px;
+  font-size: 15px;
 }
 @media screen and (max-width: 480px) {
   p {
@@ -611,7 +610,7 @@ h1 {
     max-width: 100%;
   }
 }
-@media screen and (max-width: 1025px) {
+@media (min-width: 576px) and (max-width: 1025px) {
   h1 {
     font-size: 40px;
   }
@@ -625,6 +624,27 @@ h1 {
 .main__hospitality__img,
 .main__holidays__img {
   border: 3px red solid;
+  width: 25%;
 }
-
-/*# sourceMappingURL=traditions-style.css.map */
+@media screen and (max-width: 480px) {
+  .main__area__img,
+  .main__language__img,
+  .main__religion__img,
+  .main__life__img,
+  .main__clothes__img,
+  .main__hospitality__img,
+  .main__holidays__img {
+    width: 100%;
+  }
+}
+@media (min-width: 576px) and (max-width: 1025px) {
+  .main__area__img,
+  .main__language__img,
+  .main__religion__img,
+  .main__life__img,
+  .main__clothes__img,
+  .main__hospitality__img,
+  .main__holidays__img {
+    width: 100%;
+  }
+}/*# sourceMappingURL=traditions-style.css.map */

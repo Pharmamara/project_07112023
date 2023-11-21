@@ -513,6 +513,7 @@ ul {
   display: flex;
   flex-direction: row;
   margin: auto;
+  height: -moz-fit-content;
   height: fit-content;
 }
 @media screen and (max-width: 480px) {
@@ -573,6 +574,7 @@ ul {
   background-color: red;
   border-radius: 30px;
   color: white;
+  width: -moz-fit-content;
   width: fit-content;
   height: 80px;
   margin-top: 30px;
@@ -678,6 +680,4 @@ ul {
   border: 3px solid red;
   margin-top: 10px;
   margin-bottom: 10px;
-}
-
-/*# sourceMappingURL=home-style.css.map */
+}/*# sourceMappingURL=home-style.css.map */
