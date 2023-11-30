@@ -3,57 +3,79 @@
 @import "../footer-style/footer-style.scss";
 @import "../header-style/header-style.scss";
 .main {
-    font-family: $font-t;
-    &__administration {
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: space-between;
-        text-align: center;
+  font-family: $font-t;
+  &__administration {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    text-align: center;
+  }
+  &__title {
+    font-family: $font-h;
+    font-size: 50px;
+    font-weight: bolder;
+    color: $color-g;
+    text-align: center;
+    margin: 0 auto;
+    @media screen and (max-width: 480px) {
+      font-size: 150%;
+      max-width: 100%;
     }
-    &__title {
-        font-family: $font-h;
-        font-size: 50px;
-        font-weight: bolder;
-        color: $color-g;
-        text-align: center;
-        margin: 0 auto;
-    @media screen  and (max-width: 480px) {
-        font-size: 1 rem;
-        max-width: 100%;}
-        @media screen  and (max-width: 1025px) {
-            font-size: 40px;
-        }
+  }
+  &__item {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    @media screen and (max-width: 480px) {
+      font-size: 100%;
     }
-    &__item {
-        margin-top: 3%;
-        margin-bottom: 3%;
-        @media screen  and (max-width: 480px) {
-            font-size: x-large;}
-    }
-    &__ustav {
-        display: flex;
-        justify-content: center;
-        padding-top: 2%;
-        padding-bottom: 2%;
-    }
+  }
+  &__ustav {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin-top: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-weight: bold;
+  }
 }
 .title__item {
-    font-family: $font-h;
-    color: $color-r;
-    margin-top: 2%;
-    margin-bottom: 3%;
-    @media screen  and (max-width: 480px) {
-        font-size: x-large;}
+  font-family: $font-h;
+  color: $color-r;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  font-size: 150%;
+  @media screen and (max-width: 480px) {
+    font-size: x-large;
+  }
+}
+.name__item {
+  padding-bottom: 2%;
 }
 .img__item {
-    max-width: 100%;
+  max-width: 100%;
+}
+.list__title {
+  margin-bottom: 3%;
 }
 .ustav-link {
-    border-style: 2px solid $color-r;
-    background-color: $color-r;
-    color: $color-w;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-left: 10%;
-    padding-right: 10%;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  background-color: $color-r;
+  border-radius: 30px;
+  color: white;
+  width: 20%;
+  height: 5%;
+  margin-top: 30px;
+  font-family: $font-h;
+  font-size: 200%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  @media screen and (max-width: 480px) {
+    width: 60%;
+    font-size: 100%;
+  }
 }

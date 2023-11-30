@@ -287,7 +287,7 @@ ul {
 }
 @media screen and (max-width: 480px) {
   .header__top {
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(2, auto);
   }
 }
@@ -297,6 +297,11 @@ ul {
   max-width: 60%;
   justify-self: center;
   border: none;
+}
+@media screen and (max-width: 480px) {
+  .header__logo {
+    display: none;
+  }
 }
 .header__company-name {
   grid-column: 2/3;
@@ -528,13 +533,8 @@ ul {
 }
 @media screen and (max-width: 480px) {
   .main__title {
-    font-size: 1 rem;
+    font-size: 150%;
     max-width: 100%;
-  }
-}
-@media screen and (max-width: 1025px) {
-  .main__title {
-    font-size: 40px;
   }
 }
 .main__item {
@@ -543,14 +543,17 @@ ul {
 }
 @media screen and (max-width: 480px) {
   .main__item {
-    font-size: x-large;
+    font-size: 100%;
   }
 }
 .main__ustav {
   display: flex;
   justify-content: center;
+  width: 50%;
+  margin-top: 5%;
   padding-top: 2%;
   padding-bottom: 2%;
+  font-weight: bold;
 }
 
 .title__item {
@@ -558,6 +561,7 @@ ul {
   color: red;
   margin-top: 2%;
   margin-bottom: 3%;
+  font-size: 150%;
 }
 @media screen and (max-width: 480px) {
   .title__item {
@@ -565,16 +569,40 @@ ul {
   }
 }
 
+.name__item {
+  padding-bottom: 2%;
+}
+
 .img__item {
   max-width: 100%;
 }
 
+.list__title {
+  margin-bottom: 3%;
+}
+
 .ustav-link {
-  border-style: 2px solid red;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
   background-color: red;
+  border-radius: 30px;
   color: white;
+  width: 20%;
+  height: 5%;
+  margin-top: 30px;
+  font-family: "Clash Display", sans-serif;
+  font-size: 200%;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-top: 5%;
   padding-bottom: 5%;
-  padding-left: 10%;
-  padding-right: 10%;
-}/*# sourceMappingURL=about-style.css.map */
+}
+@media screen and (max-width: 480px) {
+  .ustav-link {
+    width: 60%;
+    font-size: 100%;
+  }
+}
+
+/*# sourceMappingURL=about-style.css.map */
